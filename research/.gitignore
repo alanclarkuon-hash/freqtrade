@@ -1,0 +1,35 @@
+# Credentials and local profiles must never enter source control.
+.env
+.env.*
+profiles/
+private/
+credentials*.json
+secrets*.json
+*.local.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+operator_ed25519*
+known_hosts*
+ssh_config
+
+# Generated VM state, installation seeds, artifacts, logs, and trading outputs.
+vm/
+seed/
+artifacts/
+user-data
+meta-data
+*.vmx
+*.vmdk
+*.vmsd
+*.vmsn
+*.vmem
+*.vmss
+*.nvram
+*.iso
+*.log
+*.sqlite*
+__pycache__/
