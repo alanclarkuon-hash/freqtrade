@@ -42,14 +42,7 @@ before operating the installed environment.
 
 ## Sensitive configuration
 
-Keep API keys, passphrases, and other secrets in private profile files outside the
-checkout. For Windows, use a dedicated location under
-`%USERPROFILE%\.config\freqtrade\profiles\`; for guest-only secrets, use the
-guest operator's private profile under `~/.config/freqtrade/profiles/`. Restrict
-access to the owning user. No secret profile is created by this commit.
-
-Never populate the tracked example's empty credential fields with real values.
-When credentials are needed in a later approved phase, load the private profile
-explicitly at runtime without copying secrets into tracked files, prompts, logs,
-or reports. Do not mount an entire user profile or home directory into a research
-container. Generated VM state and private access files stay outside Git.
+Follow the repository-wide standing instructions in
+[`AGENTS.md`](../AGENTS.md) for private profile storage, tracked examples, generated
+VM files, and checks before committing or pushing. No secret profile is created
+by these research files.
